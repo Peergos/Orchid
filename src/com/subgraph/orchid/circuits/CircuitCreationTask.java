@@ -123,7 +123,7 @@ public class CircuitCreationTask implements Runnable {
 	private void checkCircuitsForCreation() {
 
 		if(!directory.haveMinimumRouterInfo()) {
-			if(notEnoughDirectoryInformationWarningCounter % 20 == 0)
+			if(notEnoughDirectoryInformationWarningCounter % 50 == 0)
 				logger.info("Cannot build circuits because we don't have enough directory information");
 			notEnoughDirectoryInformationWarningCounter++;
 			return;
